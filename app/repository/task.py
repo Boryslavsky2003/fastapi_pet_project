@@ -1,7 +1,9 @@
+#  repository.py
+
 from sqlalchemy import select
 
-from database import new_session, TaskOrm
-from schemas import STaskAdd, STask
+from app.database import new_session, TaskOrm
+from app.schemas.task import STaskAdd, STask
 
 
 class TaskRepository:
