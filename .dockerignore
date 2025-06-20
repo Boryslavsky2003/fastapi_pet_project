@@ -1,7 +1,47 @@
+# ❌ Загальні непотрібні файли
 __pycache__/
-*.pyc
+*.py[cod]
+*.log
 *.db
-.env
+*.sqlite3
+*.env
+*.swp
+*.bak
+*.tmp
+
+# ❌ IDE/редактор
+.vscode/
+.idea/
+
+# ❌ Тестування / CI
+.coverage
+.tox/
+pytest_cache/
+tests/
+coverage.xml
+
+# ❌ Системні / тимчасові
+.DS_Store
+Thumbs.db
+
+# ❌ Git
+.git
+.gitignore
+
+# ❌ Docker / CI артефакти
+docker-compose.override.yml
+.dockerignore
+
+# ❌ Кеші Python
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
 venv/
-Dockerfile
-tasks.db
+env/
+.venv/
+ENV/
+
+# ❌ Інші залежності
+node_modules/
